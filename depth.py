@@ -1,3 +1,11 @@
+"""
+Kabir Sawal, 2020
+DISCLAIMER: This code is for educational use only!
+            Please do not use it for school projects
+            or assignments.
+Repository available at https://github.com/ksawal/treasure-tracker
+"""
+
 import sys
 import copy
 
