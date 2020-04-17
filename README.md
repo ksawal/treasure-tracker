@@ -1,4 +1,4 @@
-TREASURE TRACKER
+TREASURE TRACKER :moneybag:
 --------------------
 # What is this?
 This project creates two ways to search for a "treasure" inside a formatted map; using a breadth-first search and a depth-first search. All maps must be squares formatted as follows:
