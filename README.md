@@ -13,5 +13,5 @@ This project creates two ways to search for a "treasure" inside a formatted map;
 1) Navigate to project directory in terminal
 2) Select a maze
 3) Select search type
-3) Run `$ python3 [search type].py "maze[id-#].txt"`
+3) Run `$ python3 treasure.py "maze[#].txt" "[depth OR breadth]"`
 4) View output in terminal

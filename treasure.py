@@ -16,6 +16,7 @@ class Treasure:
     
         #read in the file
         fName = sys.argv[1]
+        self.searchType = sys.argv[2]
         file = open(fName,"r")
         self.map_size = int(file.readline()) #read in map's size
         self.map = []
@@ -47,10 +48,10 @@ class Treasure:
 
         while len(self.stack) > 0:
             #move to next tile
-            current_tile = self.stack.pop()
+            if self.searchType == "depth": current_tile = self.stack.pop()
+            elif self.searchType == "breadth": current_tile = self.stack.pop(0)
             row = current_tile[0]
             col = current_tile[1]
-            print("Current:", current_tile)
             for direction in range (4): # 1 = north, 2 = east, 3 = west, 4 = south
                 if direction == 0 and (row-1) >= 0: #NORTH
                     if self.map[row-1][col] == '$': #find treasure
